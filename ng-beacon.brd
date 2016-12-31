@@ -202,7 +202,7 @@
 <vertex x="45.7454" y="49.53"/>
 <vertex x="48.0822" y="43.942"/>
 </polygon>
-<text x="74.295" y="17.78" size="1.4224" layer="25" font="fixed" rot="R83">https://github.com/urish/ng2-beacon</text>
+<text x="74.676" y="18.542" size="1.4224" layer="25" font="fixed" rot="R83">https://github.com/urish/ng-beacon</text>
 </plain>
 <libraries>
 <library name="battery">
