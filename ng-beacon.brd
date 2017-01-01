@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -121,7 +121,6 @@
 <layer number="219" name="219bmp" color="20" fill="1" visible="no" active="no"/>
 <layer number="220" name="220bmp" color="21" fill="1" visible="no" active="no"/>
 <layer number="221" name="221bmp" color="22" fill="1" visible="no" active="no"/>
-<layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
 <layer number="225" name="225bmp" color="7" fill="1" visible="yes" active="yes"/>
@@ -638,7 +637,9 @@ design rules under a new name.</description>
 <element name="J1" library="SparkFun-Connectors" package="1X04_LOCK" value="" x="64.75070625" y="12.224234375" rot="R209">
 <attribute name="PROD_ID" value="CONN-09696" x="64.75070625" y="12.224234375" size="1.778" layer="27" rot="R209" display="off"/>
 </element>
-<element name="SN1" library="sensirion" package="DFN6/SHT" value="SHT21" x="66.04" y="35.56"/>
+<element name="SN1" library="sensirion" package="DFN6/SHT" value="SHT21" x="66.04" y="35.56" smashed="yes">
+<attribute name="VALUE" x="68.915" y="33.685" size="0.8128" layer="27" ratio="10" rot="R90"/>
+</element>
 <element name="R1" library="SparkFun-Resistors" package="0603-RES" value="10K" x="66.04" y="30.48">
 <attribute name="PROD_ID" value="RES-00824" x="66.04" y="30.48" size="1.778" layer="27" display="off"/>
 </element>
@@ -688,6 +689,9 @@ design rules under a new name.</description>
 <contactref element="G1" pad="POSITIVE@2"/>
 <contactref element="G1" pad="POSITIVE@3"/>
 <contactref element="G1" pad="POSITIVE@4"/>
+<wire x1="22.606" y1="62.611" x2="25.781" y2="62.611" width="0" layer="19" extent="1-1"/>
+<wire x1="25.654" y1="40.259" x2="25.781" y2="62.611" width="0" layer="19" extent="1-1"/>
+<wire x1="22.479" y1="40.259" x2="25.654" y2="40.259" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VIN">
 <contactref element="S1" pad="5"/>
