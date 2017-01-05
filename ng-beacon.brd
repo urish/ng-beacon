@@ -221,21 +221,6 @@
 <smd name="2" x="6.35" y="-5.08" dx="3.3528" dy="0.8128" layer="1" roundness="100"/>
 <smd name="3" x="6.35" y="-3.81" dx="3.3528" dy="0.8128" layer="1" roundness="100"/>
 <smd name="5" x="6.35" y="-1.27" dx="3.3528" dy="0.8128" layer="1" roundness="100"/>
-<hole x="-7.62" y="1.27" drill="0.5"/>
-<hole x="-7.62" y="0" drill="0.5"/>
-<hole x="-7.62" y="-1.27" drill="0.5"/>
-<hole x="-7.62" y="-2.54" drill="0.5"/>
-<hole x="-7.62" y="-3.81" drill="0.5"/>
-<hole x="-7.62" y="-5.08" drill="0.5"/>
-<hole x="-7.62" y="-6.35" drill="0.5"/>
-<hole x="7.62" y="2.54" drill="0.5"/>
-<hole x="7.62" y="1.27" drill="0.5"/>
-<hole x="7.62" y="0" drill="0.5"/>
-<hole x="7.62" y="-1.27" drill="0.5"/>
-<hole x="7.62" y="-2.54" drill="0.5"/>
-<hole x="7.62" y="-3.81" drill="0.5"/>
-<hole x="7.62" y="-5.08" drill="0.5"/>
-<hole x="7.62" y="-6.35" drill="0.5"/>
 <wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.127" layer="51"/>
 <wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.127" layer="51"/>
 <wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.127" layer="51"/>
