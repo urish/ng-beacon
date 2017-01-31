@@ -6,15 +6,18 @@
 
 Copyright (C) 2016, Uri Shaked
 
+## Build your own beacon
+Check out the [BOM](BOM.md) file for the list of materials. In addition, you need to get the [PCB](hardware/) printed, I got mine from [PCBWay](http://www.pcbway.com).
+
 ## Features
 
 - Physical Web (Eddystone) Beacon
-- Bluetooth Low Energy
-- Built in Temperatue and Humidity Sensor
+- iBeacon
+- Built-in Temperatue and Humidity Sensor
+- Configurable through Bluetooth Low Energy
 
 Wish list for 2017:
 
 - Web Bluetooth Demos
-- Optional Accelerometer, Magnetometer, Gyroscope
-- Light Sensor
+- Additional sensor options (Accelerometer, Magnetometer, Gyroscope, Light Sensor, etc.)
 - Make it programmable via JavaScript
