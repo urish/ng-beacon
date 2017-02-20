@@ -121,6 +121,7 @@
 <layer number="219" name="219bmp" color="20" fill="1" visible="no" active="no"/>
 <layer number="220" name="220bmp" color="21" fill="1" visible="no" active="no"/>
 <layer number="221" name="221bmp" color="22" fill="1" visible="no" active="no"/>
+<layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
 <layer number="225" name="225bmp" color="7" fill="1" visible="yes" active="yes"/>
@@ -429,6 +430,18 @@ body 3x3mm, pitch 1mm</description>
 </package>
 </packages>
 </library>
+<library name="wirepad">
+<description>&lt;b&gt;Single Pads&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="SMD1,27-2,54">
+<description>&lt;b&gt;SMD PAD&lt;/b&gt;</description>
+<smd name="1" x="0" y="0" dx="1.27" dy="2.54" layer="1"/>
+<text x="0" y="0" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="-0.8" y="-2.4" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -634,6 +647,12 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <element name="U$2" library="MDBT42" package="MDBT42" value="MDBT42" x="45.72" y="13.335" smashed="yes" rot="R180">
 <attribute name="VALUE" x="44.63" y="17.735" size="0.8128" layer="27" font="vector" ratio="5" rot="R270"/>
 </element>
+<element name="PAD1" library="wirepad" package="SMD1,27-2,54" value="" x="53.975" y="13.97" smashed="yes" rot="R90">
+<attribute name="VALUE" x="53.975" y="13.97" size="0.0254" layer="27" rot="R90"/>
+</element>
+<element name="PAD2" library="wirepad" package="SMD1,27-2,54" value="" x="53.975" y="15.875" smashed="yes" rot="R90">
+<attribute name="VALUE" x="53.975" y="15.875" size="0.0254" layer="27" rot="R90"/>
+</element>
 </elements>
 <signals>
 <signal name="N$3">
@@ -683,6 +702,8 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <wire x1="51.435" y1="17.78" x2="51.435" y2="16.51" width="0.254" layer="16"/>
 <wire x1="41.87" y1="18.685" x2="40.005" y2="18.685" width="0.254" layer="1"/>
 <wire x1="40.005" y1="18.685" x2="40.005" y2="8.935" width="0.254" layer="1"/>
+<contactref element="PAD2" pad="1"/>
+<wire x1="53.975" y1="15.875" x2="51.435" y2="16.51" width="0.254" layer="1"/>
 </signal>
 <signal name="N$1">
 <contactref element="G1" pad="POSITIVE@1"/>
@@ -726,9 +747,9 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <wire x1="71.12" y1="36.96" x2="71.12" y2="38.1" width="0.254" layer="1"/>
 <wire x1="71.12" y1="38.1" x2="75.064034375" y2="38.080853125" width="0.254" layer="1"/>
 <contactref element="U$2" pad="15"/>
-<wire x1="60.41543125" y1="13.97" x2="52.705" y2="13.97" width="0.254" layer="1"/>
-<wire x1="52.705" y1="13.97" x2="52.705" y2="18.260925" width="0.254" layer="1"/>
-<wire x1="52.705" y1="18.260925" x2="51.13753125" y2="19.82839375" width="0.254" layer="1"/>
+<wire x1="60.41543125" y1="13.97" x2="56.515" y2="13.97" width="0.254" layer="1"/>
+<wire x1="56.515" y1="13.97" x2="56.515" y2="18.260925" width="0.254" layer="1"/>
+<wire x1="56.515" y1="18.260925" x2="51.13753125" y2="19.82839375" width="0.254" layer="1"/>
 <wire x1="51.13753125" y1="19.82839375" x2="48.8734625" y2="19.83935625" width="0.254" layer="1"/>
 <wire x1="48.8734625" y1="19.83935625" x2="48.87016875" y2="19.668740625" width="0.254" layer="1"/>
 <wire x1="48.87016875" y1="19.668740625" x2="48.87" y2="19.651325" width="0.254" layer="1"/>
@@ -784,6 +805,12 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <wire x1="43.815" y1="19.05" x2="43.815" y2="17.145" width="0.254" layer="16"/>
 </signal>
 <signal name="N$2">
+</signal>
+<signal name="N$4">
+<contactref element="U$2" pad="8"/>
+<contactref element="PAD1" pad="1"/>
+<wire x1="49.72" y1="13.935" x2="53.34" y2="13.935" width="0.254" layer="1"/>
+<wire x1="53.34" y1="13.935" x2="53.975" y2="13.97" width="0.254" layer="1"/>
 </signal>
 </signals>
 </board>
