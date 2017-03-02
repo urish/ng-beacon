@@ -2230,7 +2230,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="G1" library="SparkFun-Electromechanical" deviceset="BATTERY" device="20MM_4LEGS" value="20mm coincell"/>
 <part name="S1" library="SparkFun-Electromechanical" deviceset="SWITCH-DPDT" device="AYZ0202" value="DPDT"/>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="J1" library="SparkFun-Connectors" deviceset="M04" device="LOCK"/>
 <part name="GND8" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -2248,7 +2247,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="G1" gate="G$1" x="-33.02" y="71.12" rot="R90"/>
 <instance part="S1" gate="G$1" x="-20.32" y="48.26" rot="R180"/>
 <instance part="GND1" gate="1" x="-17.78" y="76.2" rot="R90"/>
-<instance part="GND2" gate="1" x="55.88" y="68.58" rot="R90"/>
 <instance part="GND3" gate="1" x="7.62" y="66.04" rot="R270"/>
 <instance part="J1" gate="G$1" x="111.76" y="81.28" rot="R180"/>
 <instance part="GND8" gate="1" x="96.52" y="76.2" rot="R270"/>
@@ -2267,11 +2265,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="GND1" gate="1" pin="GND"/>
 <pinref part="G1" gate="G$1" pin="-"/>
 <wire x1="-33.02" y1="76.2" x2="-20.32" y2="76.2" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="GND"/>
-<wire x1="53.34" y1="68.58" x2="48.26" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="GND2" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="GND2"/>
