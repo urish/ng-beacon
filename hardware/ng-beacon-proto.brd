@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.0.2">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -260,23 +260,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package>
 </packages>
 </library>
-<library name="SparkFun-Passives">
-<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
-In this library you'll find resistors, capacitors, inductors, test points, jumper pads, etc.&lt;br&gt;&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
-&lt;br&gt;&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="PAD-JUMPER-2-NO_NO_SILK">
-<smd name="1" x="-0.45" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<smd name="2" x="0.45" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<text x="-0.908" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-0.908" y="-1.651" size="0.4064" layer="27">&gt;VALUE</text>
-</package>
-</packages>
-</library>
 <library name="ng-beacon">
 <description>Generated from &lt;b&gt;ng-beacon.sch&lt;/b&gt;&lt;p&gt;
 by exp-lbrs.ulp</description>
@@ -427,6 +410,91 @@ body 3x3mm, pitch 1mm</description>
 <smd name="6" x="-1" y="1.4" dx="0.7" dy="0.4" layer="1" rot="R90"/>
 <text x="-2.25" y="-1.875" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
 <text x="2.875" y="-1.875" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+</package>
+</packages>
+</library>
+<library name="SparkFun-LED">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find discrete LEDs for illumination or indication, but no displays.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="LED-0603">
+<wire x1="0.46" y1="0.17" x2="0" y2="0.17" width="0.2032" layer="21"/>
+<wire x1="-0.46" y1="0.17" x2="0" y2="0.17" width="0.2032" layer="21"/>
+<wire x1="0" y1="0.17" x2="0.2338" y2="-0.14" width="0.2032" layer="21"/>
+<wire x1="-0.0254" y1="0.1546" x2="-0.2184" y2="-0.14" width="0.2032" layer="21"/>
+<smd name="C" x="0" y="0.877" dx="1" dy="1" layer="1" roundness="30"/>
+<smd name="A" x="0" y="-0.877" dx="1" dy="1" layer="1" roundness="30"/>
+<text x="-0.6985" y="-0.889" size="0.4064" layer="25" rot="R90">&gt;NAME</text>
+<text x="1.0795" y="-1.016" size="0.4064" layer="27" rot="R90">&gt;VALUE</text>
+</package>
+</packages>
+</library>
+<library name="SparkFun-Resistors">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find resistors, capacitors, inductors, test points, jumper pads, etc.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="0603-RES">
+<wire x1="-1.6002" y1="0.6858" x2="1.6002" y2="0.6858" width="0.0508" layer="39"/>
+<wire x1="1.6002" y1="0.6858" x2="1.6002" y2="-0.6858" width="0.0508" layer="39"/>
+<wire x1="1.6002" y1="-0.6858" x2="-1.6002" y2="-0.6858" width="0.0508" layer="39"/>
+<wire x1="-1.6002" y1="-0.6858" x2="-1.6002" y2="0.6858" width="0.0508" layer="39"/>
+<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
+<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<text x="-0.889" y="0.762" size="0.4064" layer="25" font="vector">&gt;NAME</text>
+<text x="-1.016" y="-1.143" size="0.4064" layer="27" font="vector">&gt;VALUE</text>
+<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
+<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+<rectangle x1="-0.1905" y1="-0.381" x2="0.1905" y2="0.381" layer="21"/>
+</package>
+</packages>
+</library>
+<library name="SparkFun-Electromechanical">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find anything that moves- switches, relays, buttons, potentiometers. Also, anything that goes on a board but isn't electrical in nature- screws, standoffs, etc.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="TACTILE-SWITCH-1101NE">
+<description>SparkFun SKU# COM-08229</description>
+<wire x1="-3" y1="1.1" x2="-3" y2="-1.1" width="0.127" layer="51"/>
+<wire x1="3" y1="1.1" x2="3" y2="-1.1" width="0.127" layer="51"/>
+<wire x1="-2.75" y1="1.75" x2="-3" y2="1.5" width="0.2032" layer="21" curve="90"/>
+<wire x1="-2.75" y1="1.75" x2="2.75" y2="1.75" width="0.2032" layer="21"/>
+<wire x1="2.75" y1="1.75" x2="3" y2="1.5" width="0.2032" layer="21" curve="-90"/>
+<wire x1="3" y1="-1.5" x2="2.75" y2="-1.75" width="0.2032" layer="21" curve="-90"/>
+<wire x1="2.75" y1="-1.75" x2="-2.75" y2="-1.75" width="0.2032" layer="21"/>
+<wire x1="-3" y1="-1.5" x2="-2.75" y2="-1.75" width="0.2032" layer="21" curve="90"/>
+<wire x1="-3" y1="-1.5" x2="-3" y2="-1.1" width="0.2032" layer="21"/>
+<wire x1="-3" y1="1.1" x2="-3" y2="1.5" width="0.2032" layer="21"/>
+<wire x1="3" y1="1.1" x2="3" y2="1.5" width="0.2032" layer="21"/>
+<wire x1="3" y1="-1.5" x2="3" y2="-1.1" width="0.2032" layer="21"/>
+<wire x1="-1.5" y1="0.75" x2="1.5" y2="0.75" width="0.2032" layer="21"/>
+<wire x1="1.5" y1="-0.75" x2="-1.5" y2="-0.75" width="0.2032" layer="21"/>
+<wire x1="-1.5" y1="-0.75" x2="-1.5" y2="0.75" width="0.2032" layer="21"/>
+<wire x1="1.5" y1="-0.75" x2="1.5" y2="0.75" width="0.2032" layer="21"/>
+<wire x1="-2" y1="0" x2="-1" y2="0" width="0.127" layer="51"/>
+<wire x1="-1" y1="0" x2="0.1" y2="0.5" width="0.127" layer="51"/>
+<wire x1="0.3" y1="0" x2="2" y2="0" width="0.127" layer="51"/>
+<smd name="1" x="-3.15" y="0" dx="2.3" dy="1.6" layer="1" rot="R180"/>
+<smd name="2" x="3.15" y="0" dx="2.3" dy="1.6" layer="1" rot="R180"/>
+<text x="-3" y="2" size="0.762" layer="25">&gt;NAME</text>
+<text x="-3" y="-2.7" size="0.762" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 </library>
@@ -633,8 +701,16 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <element name="SN1" library="ng-beacon" package="DFN6/SHT" value="SHT21" x="71.12" y="34.29" smashed="yes">
 <attribute name="VALUE" x="73.995" y="32.415" size="0.8128" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="DFU" library="SparkFun-Passives" package="PAD-JUMPER-2-NO_NO_SILK" value="JUMPER-PAD-2-NO" x="35.56" y="13.335" rot="R270"/>
 <element name="J3" library="ng-beacon" package="PROTO4X6" value="" x="59.69" y="45.085" rot="R90"/>
+<element name="D1" library="SparkFun-LED" package="LED-0603" value="GREEN" x="55.88" y="15.1" rot="R90">
+<attribute name="PROD_ID" value="DIO-00821" x="55.88" y="15.1" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="R1" library="SparkFun-Resistors" package="0603-RES" value="470" x="55.88" y="13.6" rot="R180">
+<attribute name="PROD_ID" value="RES-07869" x="55.88" y="13.6" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="S2" library="SparkFun-Electromechanical" package="TACTILE-SWITCH-1101NE" value="SWITCH-MOMENTARY-2SMD-1101NE" x="35.56" y="15.24" rot="R90">
+<attribute name="PROD_ID" value="SWCH-00815" x="35.56" y="15.24" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="N$3">
@@ -649,13 +725,11 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <wire x1="71.12" y1="29.845" x2="75.565" y2="27.94" width="0.254" layer="16"/>
 <wire x1="75.565" y1="27.94" x2="74.295" y2="16.51" width="0.254" layer="16"/>
 <wire x1="74.295" y1="16.51" x2="73.66" y2="15.24" width="0.254" layer="16"/>
-<contactref element="DFU" pad="2"/>
 <wire x1="73.66" y1="15.24" x2="66.04" y2="11.43" width="0.254" layer="16"/>
-<wire x1="66.04" y1="11.43" x2="62.23" y2="11.43" width="0.254" layer="16"/>
+<wire x1="66.04" y1="11.43" x2="62.23" y2="8.89" width="0.254" layer="16"/>
 <via x="59.69" y="11.43" extent="1-16" drill="0.6" shape="square"/>
-<wire x1="62.23" y1="11.43" x2="59.69" y2="11.43" width="0.254" layer="16"/>
-<wire x1="59.69" y1="11.43" x2="55.88" y2="12.7" width="0.254" layer="1"/>
-<wire x1="55.88" y1="12.7" x2="52.07" y2="12.7" width="0.254" layer="1"/>
+<wire x1="62.23" y1="8.89" x2="59.69" y2="11.43" width="0.254" layer="16"/>
+<wire x1="53.975" y1="12.7" x2="52.07" y2="12.7" width="0.254" layer="1"/>
 <wire x1="33.76595" y1="8.213378125" x2="34.29" y2="10.16" width="0.254" layer="16"/>
 <wire x1="34.29" y1="10.16" x2="27.94" y2="14.605" width="0.254" layer="16"/>
 <wire x1="27.94" y1="14.605" x2="22.225" y2="14.605" width="0.254" layer="16"/>
@@ -668,12 +742,20 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <contactref element="J3" pad="P$6"/>
 <wire x1="76.68275" y1="38.046609375" x2="72.39" y2="42.339359375" width="0.254" layer="16"/>
 <wire x1="72.39" y1="42.339359375" x2="72.39" y2="45.085" width="0.254" layer="16"/>
-<wire x1="62.23" y1="11.43" x2="62.23" y2="8.89" width="0.254" layer="16"/>
 <wire x1="62.23" y1="8.89" x2="56.515" y2="5.715" width="0.254" layer="16"/>
 <wire x1="56.515" y1="5.715" x2="36.195" y2="5.715" width="0.254" layer="16"/>
-<wire x1="35.56" y1="12.885" x2="33.76595" y2="8.213378125" width="0.254" layer="1"/>
 <wire x1="36.195" y1="5.715" x2="33.76595" y2="8.14405" width="0.254" layer="16"/>
 <wire x1="33.76595" y1="8.14405" x2="33.76595" y2="8.213378125" width="0.254" layer="16"/>
+<wire x1="53.975" y1="12.7" x2="54.61" y2="12.065" width="0.254" layer="1"/>
+<wire x1="54.61" y1="12.065" x2="59.055" y2="12.065" width="0.254" layer="1"/>
+<wire x1="59.055" y1="12.065" x2="59.69" y2="11.43" width="0.254" layer="1"/>
+<contactref element="S2" pad="2"/>
+<wire x1="35.56" y1="18.39" x2="35.56" y2="20.32" width="0.254" layer="1"/>
+<wire x1="35.56" y1="20.32" x2="36.83" y2="21.59" width="0.254" layer="1"/>
+<wire x1="36.83" y1="21.59" x2="49.53" y2="21.59" width="0.254" layer="1"/>
+<wire x1="49.53" y1="21.59" x2="49.53" y2="13.97" width="0.254" layer="1"/>
+<wire x1="49.53" y1="13.97" x2="50.8" y2="12.7" width="0.254" layer="1"/>
+<wire x1="50.8" y1="12.7" x2="52.07" y2="12.7" width="0.254" layer="1"/>
 </signal>
 <signal name="N$1">
 <contactref element="G1" pad="POSITIVE@1"/>
@@ -717,12 +799,11 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <wire x1="72.749771875" y1="63.21341875" x2="72.597159375" y2="62.70240625" width="0.4064" layer="1"/>
 <wire x1="72.39" y1="16.51" x2="72.39" y2="14.605" width="0.254" layer="1"/>
 <wire x1="72.39" y1="14.605" x2="68.58" y2="12.7" width="0.254" layer="1"/>
-<wire x1="68.58" y1="12.7" x2="62.23" y2="12.7" width="0.254" layer="1"/>
-<wire x1="62.23" y1="12.7" x2="59.69" y2="12.7" width="0.254" layer="1"/>
-<wire x1="59.69" y1="12.7" x2="55.88" y2="13.97" width="0.254" layer="1"/>
-<wire x1="55.88" y1="13.97" x2="52.07" y2="13.97" width="0.254" layer="1"/>
-<wire x1="62.23" y1="12.7" x2="62.23" y2="8.89" width="0.254" layer="1"/>
-<wire x1="62.23" y1="8.89" x2="56.515" y2="5.715" width="0.254" layer="1"/>
+<wire x1="68.58" y1="12.7" x2="64.135" y2="10.16" width="0.254" layer="1"/>
+<wire x1="64.135" y1="10.16" x2="63.40230625" y2="9.6715375" width="0.254" layer="1"/>
+<wire x1="63.40230625" y1="9.6715375" x2="62.23" y2="8.89" width="0.254" layer="1"/>
+<wire x1="62.23" y1="8.89" x2="60.28905625" y2="7.811696875" width="0.254" layer="1"/>
+<wire x1="60.28905625" y1="7.811696875" x2="56.515" y2="5.715" width="0.254" layer="1"/>
 <wire x1="34.29" y1="5.715" x2="26.67" y2="10.16" width="0.254" layer="1"/>
 <wire x1="56.515" y1="5.715" x2="34.29" y2="5.715" width="0.254" layer="1"/>
 <wire x1="26.67" y1="10.16" x2="27.350734375" y2="12.333321875" width="0.254" layer="1"/>
@@ -732,6 +813,15 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <contactref element="J3" pad="P$5"/>
 <wire x1="69.85" y1="40.60170625" x2="69.85" y2="45.085" width="0.254" layer="1"/>
 <wire x1="72.370853125" y1="38.080853125" x2="69.85" y2="40.60170625" width="0.254" layer="1"/>
+<contactref element="R1" pad="2"/>
+<wire x1="52.07" y1="13.97" x2="55.03" y2="13.97" width="0.254" layer="1"/>
+<wire x1="55.03" y1="13.97" x2="55.03" y2="13.6" width="0.254" layer="1"/>
+<wire x1="55.03" y1="13.6" x2="55.03" y2="12.915" width="0.254" layer="1"/>
+<wire x1="55.03" y1="12.915" x2="55.245" y2="12.7" width="0.254" layer="1"/>
+<wire x1="55.245" y1="12.7" x2="60.325" y2="12.7" width="0.254" layer="1"/>
+<wire x1="60.325" y1="12.7" x2="61.595" y2="11.43" width="0.254" layer="1"/>
+<wire x1="61.595" y1="11.43" x2="61.64384375" y2="11.43" width="0.254" layer="1"/>
+<wire x1="61.64384375" y1="11.43" x2="63.40230625" y2="9.6715375" width="0.254" layer="1"/>
 </signal>
 <signal name="SWCLK">
 <contactref element="J1" pad="3"/>
@@ -784,17 +874,11 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 </signal>
 <signal name="N$2">
 </signal>
-<signal name="N$4">
-<contactref element="U$1" pad="6"/>
-<contactref element="DFU" pad="1"/>
-<wire x1="35.56" y1="13.785" x2="39.37" y2="13.785" width="0.254" layer="1"/>
-<wire x1="39.37" y1="13.785" x2="39.37" y2="13.97" width="0.254" layer="1"/>
-</signal>
 <signal name="N$5">
 <contactref element="U$1" pad="12"/>
-<wire x1="52.07" y1="16.51" x2="55.245" y2="15.875" width="0.254" layer="1"/>
-<via x="55.245" y="15.875" extent="1-16" drill="0.6" shape="square"/>
-<wire x1="55.245" y1="15.875" x2="57.785" y2="15.875" width="0.254" layer="16"/>
+<wire x1="52.07" y1="16.51" x2="55.245" y2="16.51" width="0.254" layer="1"/>
+<via x="55.245" y="16.51" extent="1-16" drill="0.6" shape="square"/>
+<wire x1="55.245" y1="16.51" x2="57.785" y2="15.875" width="0.254" layer="16"/>
 <wire x1="57.785" y1="15.875" x2="58.42" y2="13.97" width="0.254" layer="16"/>
 <wire x1="58.42" y1="13.97" x2="69.215" y2="13.97" width="0.254" layer="16"/>
 <wire x1="69.215" y1="13.97" x2="69.85" y2="15.24" width="0.254" layer="16" curve="126.869898"/>
@@ -804,14 +888,35 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 </signal>
 <signal name="N$6">
 <contactref element="U$1" pad="13"/>
-<wire x1="52.07" y1="17.78" x2="55.245" y2="17.78" width="0.254" layer="1"/>
-<via x="55.245" y="17.78" extent="1-16" drill="0.6" shape="square"/>
-<wire x1="55.245" y1="17.78" x2="57.785" y2="17.78" width="0.254" layer="16"/>
+<via x="55.245" y="18" extent="1-16" drill="0.6" shape="square"/>
 <wire x1="57.785" y1="17.78" x2="59.055" y2="14.605" width="0.254" layer="16"/>
 <wire x1="59.055" y1="14.605" x2="69.215" y2="14.605" width="0.254" layer="16"/>
 <wire x1="69.215" y1="14.605" x2="59.69" y2="36.195" width="0.254" layer="16"/>
 <contactref element="J3" pad="P$1"/>
 <wire x1="59.69" y1="36.195" x2="59.69" y2="45.085" width="0.254" layer="16"/>
+<wire x1="52.07" y1="17.78" x2="55.025" y2="17.78" width="0.254" layer="1"/>
+<wire x1="55.025" y1="17.78" x2="55.245" y2="18" width="0.254" layer="1"/>
+<wire x1="55.245" y1="18" x2="57.565" y2="18" width="0.254" layer="16"/>
+<wire x1="57.565" y1="18" x2="57.785" y2="17.78" width="0.254" layer="16"/>
+</signal>
+<signal name="N$7">
+<contactref element="U$1" pad="11"/>
+<contactref element="D1" pad="C"/>
+<wire x1="55.003" y1="15.1" x2="52.21" y2="15.1" width="0.254" layer="1"/>
+<wire x1="52.21" y1="15.1" x2="52.07" y2="15.24" width="0.254" layer="1"/>
+</signal>
+<signal name="N$8">
+<contactref element="D1" pad="A"/>
+<contactref element="R1" pad="1"/>
+<wire x1="56.73" y1="13.6" x2="56.73" y2="15.073" width="0.254" layer="1"/>
+<wire x1="56.73" y1="15.073" x2="56.757" y2="15.1" width="0.254" layer="1"/>
+</signal>
+<signal name="N$4">
+<contactref element="U$1" pad="6"/>
+<contactref element="S2" pad="1"/>
+<wire x1="39.37" y1="13.97" x2="36.83" y2="13.97" width="0.254" layer="1"/>
+<wire x1="36.83" y1="13.97" x2="36.83" y2="13.36" width="0.254" layer="1"/>
+<wire x1="36.83" y1="13.36" x2="35.56" y2="12.09" width="0.254" layer="1"/>
 </signal>
 </signals>
 </board>
