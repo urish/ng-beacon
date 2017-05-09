@@ -563,6 +563,25 @@ body 3x3mm, pitch 1mm</description>
 <text x="-2.25" y="-1.875" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
 <text x="2.875" y="-1.875" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
 </package>
+<package name="2X5-PTH-1.27MM">
+<pad name="8" x="1.27" y="0.635" drill="0.508" diameter="1"/>
+<pad name="6" x="0" y="0.635" drill="0.508" diameter="1"/>
+<pad name="4" x="-1.27" y="0.635" drill="0.508" diameter="1"/>
+<pad name="2" x="-2.54" y="0.635" drill="0.508" diameter="1"/>
+<text x="-3.048" y="1.397" size="0.8128" layer="25">&gt;NAME</text>
+<text x="-2.921" y="-1.397" size="0.8128" layer="27" align="top-left">&gt;VALUE</text>
+<pad name="10" x="2.54" y="0.635" drill="0.508" diameter="1"/>
+<pad name="7" x="1.27" y="-0.635" drill="0.508" diameter="1"/>
+<pad name="5" x="0" y="-0.635" drill="0.508" diameter="1"/>
+<pad name="3" x="-1.27" y="-0.635" drill="0.508" diameter="1"/>
+<pad name="1" x="-2.54" y="-0.635" drill="0.508" diameter="1"/>
+<pad name="9" x="2.54" y="-0.635" drill="0.508" diameter="1"/>
+<wire x1="-3.403" y1="-1.021" x2="-3.403" y2="-0.259" width="0.254" layer="21"/>
+<wire x1="3.175" y1="1.715" x2="-3.175" y2="1.715" width="0.127" layer="51"/>
+<wire x1="-3.175" y1="1.715" x2="-3.175" y2="-1.715" width="0.127" layer="51"/>
+<wire x1="-3.175" y1="-1.715" x2="3.175" y2="-1.715" width="0.127" layer="51"/>
+<wire x1="3.175" y1="-1.715" x2="3.175" y2="1.715" width="0.127" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="PTR5518">
@@ -723,6 +742,25 @@ body 3x3mm, pitch 1mm</description>
 <pin name="VDD" x="-17.78" y="5.08" length="middle" direction="pwr"/>
 <text x="-11.684" y="14.224" size="1.778" layer="95">&gt;NAME</text>
 <text x="-11.938" y="-13.462" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="NGBEACON_10PIN">
+<description>&lt;h3&gt;ng-beacon Shield Connector (10-pin)&lt;/h3&gt;</description>
+<pin name="NC" x="-15.24" y="5.08" length="short"/>
+<pin name="NC2" x="-15.24" y="2.54" length="short"/>
+<pin name="SWCLK" x="-15.24" y="0" length="short"/>
+<pin name="SWDIO" x="-15.24" y="-2.54" length="short"/>
+<pin name="P28" x="-15.24" y="-5.08" length="short"/>
+<pin name="GND" x="17.78" y="-5.08" length="short" rot="R180"/>
+<pin name="3V3" x="17.78" y="-2.54" length="short" rot="R180"/>
+<pin name="SDA" x="17.78" y="0" length="short" rot="R180"/>
+<pin name="SCL" x="17.78" y="2.54" length="short" rot="R180"/>
+<pin name="P27" x="17.78" y="5.08" length="short" rot="R180"/>
+<wire x1="-12.7" y1="-7.62" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="7.62" x2="15.24" y2="7.62" width="0.254" layer="94"/>
+<wire x1="15.24" y1="7.62" x2="15.24" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-7.62" x2="-12.7" y2="-7.62" width="0.254" layer="94"/>
+<text x="-12.7" y="7.874" size="1.778" layer="95">&gt;Name</text>
+<text x="-12.7" y="-7.874" size="1.778" layer="96" align="top-left">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -996,6 +1034,30 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 <connect gate="G$1" pin="SWCLK" pad="5"/>
 <connect gate="G$1" pin="SWDIO" pad="4"/>
 <connect gate="G$1" pin="VDD" pad="10"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NGBEACON-CONN">
+<gates>
+<gate name="G$1" symbol="NGBEACON_10PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="2X5-PTH-1.27MM">
+<connects>
+<connect gate="G$1" pin="3V3" pad="8"/>
+<connect gate="G$1" pin="GND" pad="10"/>
+<connect gate="G$1" pin="NC" pad="1"/>
+<connect gate="G$1" pin="NC2" pad="3"/>
+<connect gate="G$1" pin="P27" pad="2"/>
+<connect gate="G$1" pin="P28" pad="9"/>
+<connect gate="G$1" pin="SCL" pad="4"/>
+<connect gate="G$1" pin="SDA" pad="6"/>
+<connect gate="G$1" pin="SWCLK" pad="5"/>
+<connect gate="G$1" pin="SWDIO" pad="7"/>
 </connects>
 <technologies>
 <technology name=""/>
