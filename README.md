@@ -13,14 +13,21 @@ Check out the [BOM](BOM.md) file for the list of materials. In addition, you nee
 
 - Physical Web (Eddystone) Beacon
 - iBeacon
-- Built-in Temperatue and Humidity Sensor
-- Configurable through Bluetooth Low Energy
+- Built-in [JavaScript Interpreter](https://www.espruino.com/Reference)
+- Fully programmable via JavaScript
+- Over-the-air firmware updates
+- Prototyping area where you can add your own sensors and extend the board
+- Runs of CR2032 / CR2024 coin cell battery, can last for several months
+- Built in LED and push button
 
-Wish list for 2017:
+## Hardware
+The board uses the [nRF52832 chip](https://www.nordicsemi.com/eng/Products/Bluetooth-low-energy/nRF52832), which has the following features:
 
-- [x] Make it programmable via JavaScript
-- [ ] Web Bluetooth Demos
-- [ ] Additional sensor options (Accelerometer, Magnetometer, Gyroscope, Light Sensor, etc.)
+- 32-bit ARM Cortex-M4F Processor running at 64MHz
+- 512kB flash + 64kB RAM
+- Bluetooth 5 support, up to 2MBPS
+- Up to +4dBm output power, -96dBm sensitivity
+- 3 PWM, 3 SPI, 2 I²C, Serial UART
 
 ## Firmware
 
