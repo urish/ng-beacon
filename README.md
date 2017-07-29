@@ -7,6 +7,7 @@
 Copyright (C) 2016, 2017 Uri Shaked
 
 ## Build your own beacon
+
 Check out the [BOM](BOM.md) file for the list of materials. In addition, you need to get the [PCB](hardware/) printed, I got mine from [PCBWay](http://www.pcbway.com).
 
 ## Features
@@ -28,6 +29,18 @@ The board uses the [nRF52832 chip](https://www.nordicsemi.com/eng/Products/Bluet
 - Bluetooth 5 support, up to 2MBPS
 - Up to +4dBm output power, -96dBm sensitivity
 - 3 PWM, 3 SPI, 2 I²C, Serial UART
+
+## Code samples
+
+Configure the built-in button to control the LED:
+
+    setWatch(() => LED1.toggle(), BTN1, { 
+      repeat: true,
+      edge: 'falling', 
+      debounce: 100
+    });
+
+[More code samples](examples/)
 
 ## Firmware
 
